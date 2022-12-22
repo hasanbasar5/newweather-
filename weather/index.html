@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="weather.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <i style="display: none;" class="fa-solid fa-bars"></i>
+    <div class="s-input">
+   <div class="search">
+    
+    <input class="rounded-pill border-0 text-center p-2 " type="text" name="search" placeholder="Search City">
+    <i class="fa-solid fa-location-crosshairs"></i>
+    <div class="city text-center">
+    <h1 class="text-center mt-3">Hong Kong</h1>
+    <h2 class="text-center mt-3">06:24 PM</h2>
+   </div>
+</div>
+</div>
+   <div class="f-1 m-5">
+<img src="./sun.png" width="100px"alt="s">
+<h2>Hong Kong</h2>
+<h4>Kowloon</h4>
+
+<h4 style="font-size: 3em;font-weight:bolder;">28<span style="color: white;">°C</span></h4>
+<a href="#"class="text-decoration-none" style="color: white;"><i class="fa-solid fa-location-dot"></i>    change location</a>
+   </div>
+   <div class="info ">
+   <div class="f-2 ">
+   
+        <img class="ms-3 mt-4" src="./humidity.png" width="40px" height="40px">
+        <div class="humidity p-3">
+        <h4>Humidity</h4>
+        <h2 style="color: white;">50%</h2>
+    </div>
+   </div> 
+   <div class="f-2 ">
+   
+    <img class="ms-3 mt-4" src="./pressure.png" width="40px" height="40px">
+    <div class="humidity p-3">
+    <h4>Air Pressure</h4>
+    <h2 style="color: white;">1006.1123 PS</h2>
+</div>
+</div> 
+<div class="f-2 ">
+   
+    <img class="ms-3 mt-4" src="./rainy.png" width="40px" height="40px">
+    <div class="humidity p-3">
+    <h4>Chance of Rain</h4>
+    <h2 style="color: white;">24%</h2>
+</div>
+</div> 
+<div class="f-2 d-flex">
+   
+    <img class="ms-3 mt-4" src="./wind.png" width="40px" height="40px">
+    <div class="humidity p-3">
+    <h4>Wind Speed</h4>
+    <h2 style="color: white;">2.4 km/h</h2>
+</div>
+</div> 
+</div>
+<div class="days ">
+    <h2 class="d ms-5" id="day">Days</h2>
+    <div class="f-day d-flex gap-1 ms-5">
+    <div class="day p-3">
+        <h2>Today</h2>
+        <img src="./sun.png" width="100px"alt="s">
+        <h4 style="font-size: 3em;font-weight:bolder;">28<span style="color: white;">°C</span></h4>
+    </div>
+    <div class="day p-3">
+        <h2>Tomorrow</h2>
+        <img src="./sun.png" width="100px"alt="s">
+        <h4 style="font-size: 3em;font-weight:bolder;">28<span style="color: white;">°C</span></h4>
+    </div>
+    <div class="day p-3">
+        <h2>Day Aftr Tmrw</h2>
+        <img src="./sun.png" width="100px"alt="s">
+        <h4 style="font-size: 3em;font-weight:bolder;">28<span style="color: white;">°C</span></h4>
+    </div>
+  
+</div>
+
+
+
+</div>
+</body>
+</html>

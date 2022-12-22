@@ -1,0 +1,270 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+  background-image: url(https://i.pinimg.com/originals/e1/0b/f3/e10bf3f453383a6892d2f5e9419f5f76.jpg) ;
+    width: 100%;
+        height:300px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center ;
+    
+}
+body::before{
+    content: " ";
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    top: 0;
+    background-color: black;
+    opacity: .7;
+    z-index: -1;
+}
+.search{
+    display: none;
+    width: 100%;
+    height: fit-content;
+    transition: all;
+    transition-duration: 2s;
+   animation: sea 3s  forwards;
+  
+}
+@keyframes sea {
+    from{
+        transform: translateX(-400px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+.loader{
+   background-color: black;
+    width: 100%;
+    height: 100vh;
+    display: block;
+    overflow: hidden;
+    margin: auto;
+    
+}
+.loader div{
+    width: 100%;
+    height: fit-content;
+    margin: auto;
+}
+.loader img{
+   margin-left: 20%;
+    margin-top: 50%;
+}
+.search input{
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+    outline: none;
+ position: relative;
+ top: -30px;
+ left: 0%;
+ 
+
+  
+}
+
+.s-icon{
+    font-size: 1.5em;
+   margin-top: 10px;
+   margin-left:5%;
+    width: 100%;
+    height: fit-content;
+    color: white;
+ 
+}
+.icon-1 P{
+    font-weight: bolder;
+}
+.s-icon:hovear ~.search{
+    display: block;
+}
+.fa-location-crosshairs{
+    position: absolute;
+  /*   top: 3%;
+    left: 88%; */
+    font-size: 1.2em; 
+    top: -20px;
+    right:15%;
+    display: none;
+}
+#sicon2{
+ color: black;
+    position: absolute;
+    top: -30px;
+    right: 25%;
+    font-size: 1.2em; 
+}
+#cancel{
+    color: black;
+    position: absolute;
+    top: -20px;
+    left: 10%;
+    font-size: 1.2em; 
+}
+.cancelcllist{
+    display: none;
+    animation-name: cllist;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes cllist {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-400deg);
+    }
+}
+.city-img{
+    width: 100%;
+    height:fit-content;
+ /*   background-image: url(https://i.pinimg.com/originals/e1/0b/f3/e10bf3f453383a6892d2f5e9419f5f76.jpg);
+    background-position: center;
+    background-size: cover;  */
+ 
+}
+.city-img .c-img {
+    margin-top: 0;
+    margin-left:0
+}
+.city-img h2,h4{
+    color:white;
+}
+.city-img h2{
+    font-size: 2em;
+}
+.icon-1{
+    display: flex;
+    width: 80%;
+    height: 6%;
+    background-color: rgba(255, 255, 255, 0.343);
+    margin: auto;
+    border-radius: 20px;
+    margin-top: 0%;
+   
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.f-2{
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+}
+.f-2 img{
+    margin-top: -50%;
+    margin-left: 10%;
+}
+.f-2 .p-1{
+    margin-top: -20%;
+    margin-left: 0%;
+}
+.day{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: fit-content;
+    margin-top: 10%;
+    margin-bottom: 0%;
+    background-color: black;
+    padding:5%;
+  
+}
+.today{
+    width: 30%;
+    height: fit-content;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 10px ;
+    background-color: rgb(255, 255, 255);
+    padding: 1%;
+    box-shadow: 1px 1px 3px rgba(128, 128, 128, 0);
+    margin-top: 0%;
+}
+.today h4{
+    color: black;
+    font-size: 0.8em;
+}
+.bottom{
+    width: 100%;
+    height: 50px;
+    background-color:white;
+    border-radius: 30px 30px 0px 0px;
+    position: fixed;
+bottom: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  
+}
+#home,#sear,#maps,#setings{
+    color: rgba(0, 0, 0, 0.754) ;
+    font-size: 1.4em;
+    
+}
+#home:hover,#sear:hover,#maps:hover,#setings:hover{
+    color: black;
+}
+.settings-details div{
+    position: relative;
+}
+.settings-details div::before{
+    content: " ";
+    width: 80px;
+    height: 1.5px;
+    background-color:teal;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    animation: det 1.5s forwards;
+}
+@keyframes det {
+    from{
+        width: 0;
+    }
+    to{
+        width: fit-content;
+    }
+}
+.body{
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height:60vh;
+    top:88%;
+    z-index: -1;
+    border-radius: 40px 40PX 0PX 0PX;
+}
+.bottom .fa-house:hover{
+    color: black;
+}
+.iframe{
+  
+    display: none;
+}
+.bottom{
+    display: none;
+}
+.settings-details{
+    width: 100%;
+    height: 300px;
+    display: none;
+    background-color: black;
+    padding: 10px;
+}
+.settings-details div{
+    display: flex;
+    gap: 10px;
+    margin-left: 10%;
+    margin-top: 20px;
+    color: white;
+}
